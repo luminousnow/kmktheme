@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('./html/head.html', {"title": "Головна"})
+  <body>
+    <div class="wrapper">
+      @@include('./html/header.html', {})
+
+      <div class="container">
+        <main class="main">
+          <h1 class="title">Let`s fun!</h1>
+          <img src="@img/felix.gif" alt="felix" />
+          <p class="text">
+            Збірка Gulp для Wordpress. <br />
+            Давай заварюємо чайок та розпочнемо!
+          </p>
+        </main>
+
+        @@include('./html/footer.html', {})
+      </div>
+    </div>
+    <script src="./assets/js/script.min.js"></script>
+  </body>
+</html>

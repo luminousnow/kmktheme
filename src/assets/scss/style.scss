@@ -1,0 +1,11 @@
+// @import "fonts";
+@import "libs/variables";
+@import "libs/common";
+@import "libs/header";
+
+@import "utilities/modern-normalize";
+@import "utilities/utilits";
+
+* {
+  outline: 1px solid tomato;
+}

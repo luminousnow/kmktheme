@@ -1,0 +1,69 @@
+@import "variables";
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: $breakpoint768 - 80;
+
+  @media screen and (min-width: $breakpoint768) {
+    width: $breakpoint768 - 80;
+  }
+
+  @media screen and (min-width: $breakpoint1200) {
+    width: $breakpoint1200 - 160;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+
+  background: url("@img/bg-img-07.jpg") 0 0 no-repeat;
+  background-color: #000;
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  main img {
+    padding-bottom: 20px;
+
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  img {
+    width: 200px;
+    margin-right: 20px;
+  }
+}
