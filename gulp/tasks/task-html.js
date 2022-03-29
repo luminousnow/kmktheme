@@ -13,14 +13,14 @@ export const html = () => {
 
       // Початок секції плагіни котрі вступають в роботу при isBuild
       .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
-      .pipe(
-        app.plugins.if(
-          app.isBuild,
-          htmlMin({
-            collapseWhitespace: true,
-          })
-        )
-      )
+      // .pipe(
+      //   app.plugins.if(
+      //     app.isBuild,
+      //     htmlMin({
+      //       collapseWhitespace: true,
+      //     })
+      //   )
+      // )
       .pipe(
         app.plugins.if(
           app.isBuild,

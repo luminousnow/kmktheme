@@ -15,8 +15,8 @@ export const scss = () => {
       .pipe(sass({ outputStyle: "expanded" }))
 
       // Заміна шляхів по масці
-      .pipe(app.plugins.replace(/@img\//g, "../img/"))
-      .pipe(app.plugins.replace(/@svg\//g, "../img/svg/"))
+      .pipe(app.plugins.replace(/@img\//g, "../assets/img/"))
+      .pipe(app.plugins.replace(/@svg\//g, "../assets/img/svg/"))
 
       // Початок секції плагіни котрі вступають в роботу при isBuild
       .pipe(app.plugins.if(app.isBuild, groupMediaQueries()))
@@ -42,8 +42,8 @@ export const scss = () => {
       .pipe(app.plugins.if(app.isBuild, cleanCss()))
       // Закінчення секції плагіни котрі вступають в роботу при isBuild
 
-      .pipe(rename({ extname: ".min.css" }))
-      .pipe(app.gulp.dest(app.path.build.css))
+      // .pipe(rename({ extname: ".min.css" }))
+      .pipe(app.gulp.dest(app.path.buildFolder))
       .pipe(app.plugins.browserSync.stream())
   );
 };
