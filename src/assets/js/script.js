@@ -1,5 +1,4 @@
-import { isWebp } from "./modules/webpChecker.js";
+import "./modules/webpChecker.js";
+import "./modules/canvas.js";
 
-isWebp();
-
-console.log("Hi! It`s all works correct)");
+console.log(`Scripts works correct)`);
