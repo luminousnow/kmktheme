@@ -14,4 +14,6 @@ const isWebp = () => {
   });
 };
 
+isWebp();
+
 export { isWebp };
