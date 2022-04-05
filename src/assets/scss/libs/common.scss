@@ -42,16 +42,16 @@ body {
 }
 
 .container {
-  width: $breakpoint768 - 80;
+  // width: $breakpoint768 - 80;
   flex: 1 1 auto;
 
-  @media screen and (min-width: $breakpoint768) {
-    width: $breakpoint768 - 80;
-  }
+  // @media screen and (min-width: $breakpoint768) {
+  //   width: $breakpoint768 - 80;
+  // }
 
-  @media screen and (min-width: $breakpoint1200) {
-    width: $breakpoint1200 - 160;
-  }
+  // @media screen and (min-width: $breakpoint1200) {
+  //   width: $breakpoint1200 - 160;
+  // }
 }
 
 footer {
