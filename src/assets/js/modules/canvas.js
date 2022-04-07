@@ -5,7 +5,9 @@ const starsCtx = stars.getContext("2d");
 // global variables
 let screen,
   starsElements,
-  starsParams = { speed: 0.3, number: 1200, extinction: 3 };
+  starsParams = { speed: 0.2, number: 1800, extinction: 2 };
+const starSize = 0.5;
+const bgColor = "#00040C";
 
 // run stars
 setupStars();
@@ -31,11 +33,12 @@ function Star() {
 
   this.show = function () {
     let x, y, rad, opacity;
+
     x = (this.x - screen.c[0]) * (stars.width / this.z);
     x = x + screen.c[0];
     y = (this.y - screen.c[1]) * (stars.width / this.z);
     y = y + screen.c[1];
-    rad = (stars.width * 0.3) / this.z;
+    rad = (stars.width * starSize) / this.z;
     opacity =
       rad > starsParams.extinction
         ? 1.5 * (2 - rad / starsParams.extinction)
@@ -66,7 +69,7 @@ function setupStars() {
 
 // redraw the frame
 function updateStars() {
-  starsCtx.fillStyle = "black";
+  starsCtx.fillStyle = bgColor;
   starsCtx.fillRect(0, 0, stars.width, stars.height);
   starsElements.forEach(function (s) {
     s.show();
