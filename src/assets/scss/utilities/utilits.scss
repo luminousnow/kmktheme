@@ -34,14 +34,17 @@ img {
   height: auto;
 }
 
-.no-link {
+.no-link,
+.no-link:hover,
+.no-link:focus,
+.no-link:active {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
 
 // Візуально прихований елемент, доступний для читання
-[class$="--hidden"] {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
