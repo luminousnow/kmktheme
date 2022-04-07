@@ -1,19 +1,11 @@
-@import "variables";
+@import "../variables";
 
 .header {
-  max-height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__container {
-  height: 100%;
+  padding: 10px 0px;
+  // max-height: 60px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .logo {
@@ -30,6 +22,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
   list-style-type: none;
 }
@@ -37,35 +31,37 @@
 .navigation__link {
   width: 110px;
   display: inline-block;
-  padding: 30px 10px 10px 10px;
+  padding: 8px;
 
   font-size: 1rem;
   text-align: center;
 
-  @media screen and (min-width: $breakpoint768) {
-    width: 90px;
-    font-size: 0.8rem;
-  }
+  // @media screen and (min-width: $breakpoint768) {
+  //   width: 90px;
+  //   font-size: 0.8rem;
+  // }
 
-  @media screen and (min-width: $breakpoint1200) {
-    width: 150px;
-    font-size: 1.2rem;
-  }
+  // @media screen and (min-width: $breakpoint1200) {
+  //   width: 150px;
+  //   font-size: 1.2rem;
+  // }
 
   text-transform: uppercase;
   background-image: linear-gradient(transparent 50%, $white 50%);
   background-size: 200% 200%;
   background-repeat: no-repeat;
-  transition: 500ms all ease;
+  transition: $theme-transition;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $black;
-    transition: 500ms all ease;
+    transition: $theme-transition;
     background-position: 0 100%;
   }
 }
 
 .language {
   padding: 10px;
+  text-align: end;
 }
