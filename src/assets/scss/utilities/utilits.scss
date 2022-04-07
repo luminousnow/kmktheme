@@ -41,7 +41,7 @@ img {
 }
 
 // Візуально прихований елемент, доступний для читання
-.visually-hidden {
+[class$="--hidden"] {
   position: absolute;
   width: 1px;
   height: 1px;
