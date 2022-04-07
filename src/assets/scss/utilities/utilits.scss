@@ -22,6 +22,7 @@ h6,
 p,
 ul,
 .col,
+.row,
 [class^="col-"] {
   margin: 0;
   padding: 0;
@@ -37,4 +38,16 @@ img {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+// Візуально прихований елемент, доступний для читання
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
