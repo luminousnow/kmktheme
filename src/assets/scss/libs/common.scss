@@ -10,26 +10,7 @@ body {
   font-size: 14px;
   color: #fff;
 
-  background-color: #000;
-
-  h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  main img {
-    padding-bottom: 20px;
-
-    display: block;
-    margin: auto;
-    width: 200px;
-  }
-
-  p {
-    text-align: center;
-    font-size: 2rem;
-  }
+  background-color: #00040c;
 }
 
 .wrapper {
@@ -52,22 +33,4 @@ body {
   // @media screen and (min-width: $breakpoint1200) {
   //   width: $breakpoint1200 - 160;
   // }
-}
-
-footer {
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-
-  font-size: 1.5rem;
-  text-transform: uppercase;
-
-  img {
-    width: 200px;
-    margin-right: 20px;
-  }
 }
